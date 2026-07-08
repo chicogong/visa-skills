@@ -1,64 +1,110 @@
-# aidone-skills
+# visa-skills
 
-> 开源签证 AI Skill 库 — 安装到你的 AI 编程助手，获得专业签证咨询能力
+> 🌍 开源签证 AI Skill 库 — 安装到你的 AI 工具，获得专业签证咨询与表单填写辅助能力
 
-[aidone.cc](https://aidone.cc) 出品 · 免费开源 · 欢迎贡献
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+由 [aidone.cc](https://aidone.cc) 出品 · 免费开源 · 欢迎贡献
 
 ---
 
-## 这是什么？
+## ✨ 核心能力
 
-这个仓库收录了针对全球各国签证申请场景的 AI Skill Prompt，你可以将它们安装到你正在使用的 AI 编程/助手工具里，快速获得：
+每个 Skill 支持两种工作模式：
 
-- 📋 **各国签证材料清单与避坑指南**
-- 🤖 **对话式材料收集**：AI 主动提问，你回答，AI 汇总成完整清单
-- 📝 **表单辅助填写**：把网页表单内容复制给 AI，AI 用你的档案数据帮你填好每个字段
+**🗣️ 模式 A：对话式材料收集**
+AI 主动提问，你逐步回答，最终获得针对你情况的定制材料清单和拒签避坑指南。
 
-## 支持的 AI 工具
+**📋 模式 B：表单字段辅助填写**
+把签证申请网站的表单字段复制给 AI，AI 告诉你每个字段该填什么。AI 不会要求你发送护照号等敏感信息，只会告诉你"这个字段填你的X信息"。
 
-| 工具 | 安装方式 | Skill 文件 |
-|---|---|---|
-| **Claude Code** | `/plugin add github.com/chicogong/aidone-skills` | `.claude/skills/` |
-| **Cursor** | 复制 `.mdc` 文件到 `.cursor/rules/` | `.cursor/rules/` |
-| **Windsurf** | 复制 `SKILL.md` 到 `.windsurf/skills/` | `.windsurf/skills/` |
-| **Trae / MarsCode** | 复制到 `.trae/rules/` 或项目根目录 | `RULES.md` |
-| **GitHub Copilot** | 复制到 `.github/copilot-instructions.md` | `.github/` |
-| **OpenAI Codex** | System Prompt 直接粘贴 | `system-prompt.md` |
-| **ChatGPT / Kimi / Coze** | 粘贴到「系统提示词」 | `system-prompt.md` |
-| **通义灵码 / 豆包** | 粘贴到「自定义指令」 | `system-prompt.md` |
+---
 
-## 两种使用模式
+## 🔧 支持的 AI 工具
 
-### 模式 A：对话式材料收集（推荐新手）
-AI 会像一位签证顾问一样，主动问你问题：出发日期？目的地？职业？然后汇总成你需要准备的材料清单，并给出每份材料的写法要点。
+| 工具 | 安装方式 | 对应文件 |
+|------|---------|---------|
+| **Claude Code** | `/plugin add github.com/chicogong/visa-skills` | `claude-skill.md` |
+| **Cursor** | 复制 `.mdc` 文件到 `.cursor/rules/` | `cursor-rule.mdc` |
+| **Windsurf** | 复制 `claude-skill.md` 到 `.windsurf/skills/<name>/` | `claude-skill.md` |
+| **Trae（字节跳动）** | 复制到 `.trae/rules/project_rules.md` | `trae-rule.md` |
+| **通义灵码** | 复制到 `.lingma/rules/` | `trae-rule.md` |
+| **OpenAI Codex CLI** | 复制到项目根目录 `AGENTS.md` | `agents.md` |
+| **GitHub Copilot** | 追加到 `.github/copilot-instructions.md` | `skill.md` |
+| **ChatGPT / Kimi / Coze / 豆包** | 粘贴到「系统提示词」 | `skill.md` |
 
-### 模式 B：表单字段辅助填写
-1. 打开签证申请网站
-2. 把你看到的表单字段（或截图转文字）复制给 AI
-3. AI 会根据你的个人档案逐字段回答应填什么内容
-4. 你对照 AI 的答案，手动填入官网
+---
 
-> ⚠️ **安全提示**：永远不要把护照号、银行卡号发给你不信任的 AI 服务。
-> 我们建议你只告诉 AI 你需要填什么字段，然后自己输入敏感数据。
+## 📦 包含的签证 Skill
 
-## 包含的签证 Skill
+| 签证 | 目录 | 状态 |
+|------|-----|------|
+| 🇪🇺 申根签证（29个国家） | `schengen/` | ✅ 已完成 |
+| 🇺🇸 美国 B1/B2 签证 + 面签辅导 | `usa-b1b2/` | ✅ 已完成 |
+| 🇯🇵 日本旅游签（单次/三年/五年） | `japan/` | ✅ 已完成 |
+| 🇬🇧 英国访客签证 | `uk/` | 🚧 进行中 |
+| 🇨🇦 加拿大访客签证（TRV） | `canada/` | 🚧 进行中 |
+| 🇦🇺 澳大利亚访客签证 | `australia/` | 📋 计划中 |
+| 🇳🇿 新西兰访客签证 | `new-zealand/` | 📋 计划中 |
 
+---
+
+## 🚀 快速开始
+
+### Claude Code（推荐）
+```bash
+/plugin add github.com/chicogong/visa-skills
 ```
-visa/
-├── schengen/      🇪🇺 申根签证（29个国家）
-├── usa/           🇺🇸 美国 B1/B2 签证 + 面签辅导
-├── japan/         🇯🇵 日本旅游签（单次/三年/五年）
-├── uk/            🇬🇧 英国访客签证
-├── canada/        🇨🇦 加拿大访客签证（TRV）
-├── australia/     🇦🇺 澳大利亚访客签证（600类）
-└── new-zealand/   🇳🇿 新西兰访客签证
+
+### Cursor
+```bash
+mkdir -p .cursor/rules
+curl -o .cursor/rules/visa-schengen.mdc \
+  https://raw.githubusercontent.com/chicogong/visa-skills/main/schengen/cursor-rule.mdc
 ```
 
-## 如何贡献
+### Trae / 通义灵码
+```bash
+mkdir -p .trae/rules
+curl -o .trae/rules/project_rules.md \
+  https://raw.githubusercontent.com/chicogong/visa-skills/main/schengen/trae-rule.md
+```
 
-欢迎提交 PR 添加更多国家的签证 Skill！请参考 `visa/schengen/` 的目录结构。
+### Codex CLI / AGENTS.md 标准
+```bash
+curl -o AGENTS.md \
+  https://raw.githubusercontent.com/chicogong/visa-skills/main/schengen/agents.md
+```
 
-每个 Skill 需要包含：
-- `system-prompt.md`：通用系统提示词（兼容所有 AI 工具）
-- `SKILL.md`：Claude/Windsurf 格式（含 YAML frontmatter）
-- `.cursor.mdc`：Cursor Rules 格式
+### ChatGPT / Kimi / Coze
+访问 [aidone.cc/skills](https://aidone.cc/skills) 一键复制对应 Prompt。
+
+---
+
+## 🛡️ 隐私说明
+
+所有 Skill 遵守以下原则：
+- ❌ **绝不在对话中索要**护照号、身份证号、银行卡号
+- ✅ 生成正式文书时，引导用户至 [aidone.cc](https://aidone.cc) **本地浏览器安全生成**（AES-GCM 加密，数据不上传服务器）
+- ✅ Skill 本身为纯 Markdown，无服务端，无数据收集
+
+---
+
+## 🤝 如何贡献
+
+欢迎提交 PR 添加更多国家的签证 Skill！
+
+1. Fork 本仓库
+2. 复制 `templates/skill-template.md` 作为起点
+3. 在对应国家目录下创建所有平台的 Skill 文件
+4. 对照 `templates/checklist.md` 自查
+5. 提交 PR
+
+详见 [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
+## 📄 License
+
+MIT © [aidone.cc](https://aidone.cc)
