@@ -6,7 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-3b82f6.svg)](CONTRIBUTING.md)
-[![Skills](https://img.shields.io/badge/Skills-7%20countries-8b5cf6.svg)](#-skills-list)
+[![Skills](https://img.shields.io/badge/Skills-10%20countries-8b5cf6.svg)](#-skills-list)
 
 **由 [aidone.cc](https://aidone.cc) 出品 · 免费开源 · 欢迎贡献 PR**
 
@@ -40,6 +40,9 @@ AI 扮演签证顾问，主动向你提问（目的地、职业、停留时间�
 | 🇨🇦 **加拿大访客签（TRV）** | [`canada/`](canada/) | ✅ 完整版 | 赴加旅游/探亲 |
 | 🇦🇺 **澳大利亚访客签（600类）**| [`australia/`](australia/) | ✅ 完整版 | 赴澳旅游/探亲，含 GTE 辅导 |
 | 🇳🇿 **新西兰访客签证** | [`new-zealand/`](new-zealand/) | ✅ 完整版 | 赴新西兰旅游/探亲 |
+| 🇰🇷 **韩国旅游签证** | [`korea/`](korea/) | ✅ 完整版 | 赴韩旅游/单次/多次往返 |
+| 🇹🇭 **泰国旅游签证** | [`thailand/`](thailand/) | ✅ 完整版 | 赴泰免签/电子入境卡/电子签 |
+| 🇸🇬 **新加坡旅游签证** | [`singapore/`](singapore/) | ✅ 完整版 | 赴新免签/电子入境卡/签证 |
 
 ---
 
@@ -161,7 +164,7 @@ cp templates/SKILL-TEMPLATE.md korea/SKILL.md  # 以韩国为例
 # 按模板填写内容，提交 PR
 ```
 
-**目前最需要的贡献**：🇰🇷 韩国 / 🇹🇭 泰国 / 🇦🇪 迪拜（UAE）/ 🇸🇬 新加坡
+**目前最需要的贡献**：🇦🇪 迪拜（UAE）
 
 ---
 
