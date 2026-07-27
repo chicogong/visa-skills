@@ -1,3 +1,14 @@
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: a3a34e1d231f6d2f74c5b67665808ceb_a6b80bc4897511f1b66e525400e6dd8f
+    ReservedCode1: 2I0ItxrXf9D+BRaI2XWZflHyCqsvXZ38w5fPZmwtOz5w2pdBpjP+CcBQVBA79FefR+mOvEE87tQM3yzXf2ofLNTkvz7R995BJs0LWDdaTV1b8o/m0PhcwSS5n09vZ+OYf7/pngDLfZO4XnRYtnucIU/D/Nj8X93s9texYaFZiXHjbyX394EMDO2Ty0A=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: a3a34e1d231f6d2f74c5b67665808ceb_a6b80bc4897511f1b66e525400e6dd8f
+    ReservedCode2: 2I0ItxrXf9D+BRaI2XWZflHyCqsvXZ38w5fPZmwtOz5w2pdBpjP+CcBQVBA79FefR+mOvEE87tQM3yzXf2ofLNTkvz7R995BJs0LWDdaTV1b8o/m0PhcwSS5n09vZ+OYf7/pngDLfZO4XnRYtnucIU/D/Nj8X93s9texYaFZiXHjbyX394EMDO2Ty0A=
+---
+
 # visa-skills 🌍
 
 > **Open-source AI Skill library for visa applications** — Install into Claude, Cursor, Trae, Codex, ChatGPT and more.
@@ -6,7 +17,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-3b82f6.svg)](CONTRIBUTING.md)
-[![Skills](https://img.shields.io/badge/Skills-10%20countries-8b5cf6.svg)](#-skills-list)
+[![Skills](https://img.shields.io/badge/Skills-11%20countries%20+%203%20docs-8b5cf6.svg)](#-skills-list)
 
 **由 [aidone.cc](https://aidone.cc) 出品 · 免费开源 · 欢迎贡献 PR**
 
@@ -43,6 +54,17 @@ AI 扮演签证顾问，主动向你提问（目的地、职业、停留时间�
 | 🇰🇷 **韩国旅游签证** | [`korea/`](korea/) | ✅ 完整版 | 赴韩旅游/单次/多次往返 |
 | 🇹🇭 **泰国旅游签证** | [`thailand/`](thailand/) | ✅ 完整版 | 赴泰免签/电子入境卡/电子签 |
 | 🇸🇬 **新加坡旅游签证** | [`singapore/`](singapore/) | ✅ 完整版 | 赴新免签/电子入境卡/签证 |
+| 🇦🇪 **阿联酋旅游签证** | [`uae/`](uae/) | ✅ 完整版 | 迪拜/阿布扎比旅游，30/90天可选 |
+
+---
+
+## 📝 文书 Skills
+
+| Skill | 目录 | 状态 | 适用场景 |
+|------|------|------|---------|
+| 📄 **中英文简历** | [`resume/`](resume/) | ✅ 完整版 | 中美英欧四地格式，ATS 友好优化 |
+| ✉️ **求职信 / Cover Letter** | [`cover-letter/`](cover-letter/) | ✅ 完整版 | 中英双语，标准四段结构 |
+| 🗓️ **旅行行程单** | [`travel-itinerary/`](travel-itinerary/) | ✅ 完整版 | 签证级/报销级双模式，逐日规划 |
 
 ---
 
@@ -154,17 +176,19 @@ EOF
 
 ## 🤝 如何贡献
 
-欢迎贡献更多国家/地区的签证 Skill！详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎贡献更多国家/地区的签证 Skill 或通用文书 Skill！详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ```bash
 # 快速开始
 git clone https://github.com/chicogong/visa-skills.git
 cd visa-skills
-cp templates/SKILL-TEMPLATE.md korea/SKILL.md  # 以韩国为例
+# 签证类：复制模板到新国家目录
+cp templates/SKILL-TEMPLATE.md brazil/SKILL.md
+# 文书类：参考 resume/ cover-letter/ travel-itinerary/ 的结构
 # 按模板填写内容，提交 PR
 ```
 
-**目前最需要的贡献**：🇦🇪 迪拜（UAE）
+**目前最需要的贡献**：🇧🇷 巴西、🇷🇺 俄罗斯、🇮🇳 印度
 
 ---
 
@@ -179,3 +203,4 @@ cp templates/SKILL-TEMPLATE.md korea/SKILL.md  # 以韩国为例
 ## 📄 License
 
 [MIT](LICENSE) © [aidone.cc](https://aidone.cc)
+*（内容由AI生成，仅供参考）*
