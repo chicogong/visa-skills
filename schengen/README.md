@@ -21,7 +21,7 @@
 | 工具 | 操作 |
 |---|---|
 | ChatGPT / Kimi / Coze / 豆包 / 文心 | 把 `system-prompt.md` 内容粘贴到「系统提示词 (System Instructions)」 |
-| Claude Code | `/plugin add github.com/chicogong/aidone-skills` |
+| Claude Code | `/plugin add github.com/chicogong/visa-skills` |
 | Cursor | 把 `.cursor.mdc` 复制到项目的 `.cursor/rules/` 目录 |
 | Windsurf | 把 `SKILL.md` 复制到项目的 `.windsurf/skills/visa-schengen/` 目录 |
 | Trae / MarsCode | 把 `system-prompt.md` 内容填入「自定义指令」或 `.trae/rules/` |
