@@ -1,4 +1,4 @@
-# visa/schengen 目录结构说明
+# schengen 目录结构说明
 
 每个签证 Skill 包含以下文件，适配不同 AI 工具：
 
@@ -16,38 +16,38 @@
 
 ### Claude Code
 ```bash
-/plugin add github.com/chicogong/aidone-skills
+/plugin add github.com/chicogong/visa-skills
 ```
 
 ### Cursor
 ```bash
 mkdir -p .cursor/rules
 curl -o .cursor/rules/visa-schengen.mdc \
-  https://raw.githubusercontent.com/chicogong/aidone-skills/main/visa/schengen/.cursor.mdc
+  https://raw.githubusercontent.com/chicogong/visa-skills/main/schengen/.cursor.mdc
 ```
 
 ### Trae
 ```bash
 mkdir -p .trae/rules
 curl -o .trae/rules/project_rules.md \
-  https://raw.githubusercontent.com/chicogong/aidone-skills/main/visa/schengen/trae-rules.md
+  https://raw.githubusercontent.com/chicogong/visa-skills/main/schengen/trae-rules.md
 ```
 
 ### 通义灵码
 ```bash
 mkdir -p .lingma/rules
 curl -o .lingma/rules/visa-schengen.md \
-  https://raw.githubusercontent.com/chicogong/aidone-skills/main/visa/schengen/lingma-rules.md
+  https://raw.githubusercontent.com/chicogong/visa-skills/main/schengen/lingma-rules.md
 ```
 
 ### Codex CLI / AGENTS.md 标准
 ```bash
 curl -o AGENTS.md \
-  https://raw.githubusercontent.com/chicogong/aidone-skills/main/visa/schengen/AGENTS.md
+  https://raw.githubusercontent.com/chicogong/visa-skills/main/schengen/AGENTS.md
 ```
 
 ### GitHub Copilot
 ```bash
-cat https://raw.githubusercontent.com/chicogong/aidone-skills/main/visa/schengen/system-prompt.md \
+cat https://raw.githubusercontent.com/chicogong/visa-skills/main/schengen/system-prompt.md \
   >> .github/copilot-instructions.md
 ```
