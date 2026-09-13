@@ -1,4 +1,18 @@
 ---
+name: resume-bilingual
+version: 1.0.0
+description: "中英文简历撰写与优化助手；帮助整理结构、地区格式和 ATS 兼容性，但不编造个人经历或成果。"
+category: document
+tags: [resume, cv, bilingual, 简历, 求职]
+models: [claude, cursor, windsurf, trae, codex, chatgpt, kimi, coze]
+triggers:
+  - 写简历
+  - 修改简历
+  - resume
+  - CV
+  - ATS 简历优化
+author: aidone.cc
+updated: 2026-09-13
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3

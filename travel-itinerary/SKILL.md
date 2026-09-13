@@ -1,4 +1,17 @@
 ---
+name: travel-itinerary
+version: 1.0.0
+description: "旅行与差旅行程单规划、整理和一致性检查助手；不虚构航班、住宿、费用或预订信息。"
+category: document
+tags: [travel, itinerary, visa-documents, 行程单, 旅行计划]
+models: [claude, cursor, windsurf, trae, codex, chatgpt, kimi, coze]
+triggers:
+  - 行程单
+  - travel itinerary
+  - 签证行程
+  - 差旅行程
+author: aidone.cc
+updated: 2026-09-13
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3

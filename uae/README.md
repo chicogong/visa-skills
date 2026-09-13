@@ -1,4 +1,4 @@
-# 阿联酋（迪拜）签证 AI 助手 (UAE / Dubai Visa Expert)
+# 阿联酋短期旅游入境 AI 助手 (UAE Tourist Visa Assistant)
 
 > 出品：[aidone.cc](https://aidone.cc) · 开源免费
 
@@ -8,9 +8,9 @@
 
 本 Skill 为你提供两种核心能力：
 
-**模式 A — 对话式材料收集**：AI 主动问你问题，逐步收集你的行程和个人情况，最终输出定制化的材料清单和高频拒签坑点。
+**模式 A — 对话式材料收集**：AI 主动问你问题，逐步收集与你签证类别相关的行程信息，最终输出按官方/担保渠道核对的材料清单与待确认事项。
 
-**模式 B — 表单辅助填写**：把 ICA/GDRFA 或航空公司申请表单上的字段粘贴给 AI，AI 逐字段告诉你怎么填。敏感字段只解释含义不索要数据。
+**模式 B — 表单辅助填写**：把 ICP、GDRFA 或授权担保渠道表单中的字段粘贴给 AI，AI 逐字段说明。敏感字段只解释含义、不索要实际数据。
 
 ---
 
@@ -39,12 +39,12 @@
 AI 会主动问你去几天、什么职业、通过什么渠道申请，然后输出定制清单。
 
 ### 模式 B：表单辅助
-1. 打开 ICA/GDRFA 或航空公司签证申请页面
+1. 打开 ICP、GDRFA 或已确认可办理该签证类别的担保渠道页面
 2. 把表单字段列表复制下来
 3. 粘贴给 AI
 4. AI 逐字段告诉你怎么填
 
-> 💡 **提示**：在 [aidone.cc](https://aidone.cc) 填好个人档案后，可快速生成签证所需文书。推荐使用航司通道（Emirates/Etihad/Flydubai）一站式办理。
+> 💡 **提示**：申请资格、担保渠道、材料和费用因国籍及签证类别而异。先核对 [ICP](https://icp.gov.ae/en/services/) 或 [GDRFA Dubai](https://www.gdrfad.gov.ae/en/services) 的当前服务说明及[官方申请渠道指引](https://u.ae/en/information-and-services/visa-and-emirates-id/where-to-apply-for-entry-permits-or-visas)；不要把某个渠道的清单当成通用要求。
 
 ---
 

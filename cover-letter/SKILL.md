@@ -1,4 +1,17 @@
 ---
+name: cover-letter-bilingual
+version: 1.0.0
+description: "中英文求职信撰写与优化助手；基于用户提供的真实经历和职位信息生成定制草稿，不虚构事实。"
+category: document
+tags: [cover-letter, job-search, bilingual, 求职信, 求职]
+models: [claude, cursor, windsurf, trae, codex, chatgpt, kimi, coze]
+triggers:
+  - 求职信
+  - cover letter
+  - 求职文书
+  - 申请岗位
+author: aidone.cc
+updated: 2026-09-13
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3
